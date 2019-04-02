@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400');
+
+body {
+  font-family: 'open sans', sans-serif;
+  font-size: 18px;
+  padding: 0px;
+  margin: 0px;
+}
+
+header {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+header div {
+  background-image: url("../images/soup.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  font-size: 2.5em;
+  height: 100vh;
+  padding: 0;
+}
+
+header h1 {
+  font-weight: 400;
+  margin: auto;
+  position: relative;
+  top: 50%;
+}
+
+header p {
+  color: gray;
+  margin: 100px 150px 50px;
+  /*text-align: left;*/
+}
+
+header img {
+  width: 35%;
+  margin: 0;
+}
+
+.line {
+  border: 0;
+  background-color: gray;
+  height: 2px;
+  margin: 30px 150px 60px;
+}
+
+#ingredients {
+  text-align: center;
+}
+
+#ingredients article {
+  font-weight: 300;
+  margin: 0 150px;
+}
+
+#ingredients p {
+  text-align: left;
+}
+
+#ingredients ul {
+  list-style-type: none;
+  padding-left: 0;
+  text-align: left;
+}
+
+#ingredients ul > li:before{
+  content: "- ";
+}
+
+#ingredients img {
+  width: 35%;
+  margin: 30px 0 0 ;
+}
+
+#directions article {
+  font-weight: 300;
+  margin: 0 150px 50px;
+}
+
+
+#directions ol  > li {
+  list-style: none;
+}
+
+#directions ol {
+  counter-reset: list;
+  padding: 5px;
+  text-align: left;
+}
+
+#directions ol > li:before{
+  content: counter(list) ") ";
+  counter-increment: list;
+}
